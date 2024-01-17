@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:weather_project/json/aufgabe2/json_parser.dart' as Parser2;
 import 'package:weather_project/json/aufgabe3_4/json_parser.dart' as Parser3;
+import 'package:weather_project/json/aufgabe5/weather_data.dart' as JSON5;
 import 'package:weather_project/json/aufgabenblatt/weather_data.dart';
 import 'package:weather_project/json/aufgabenblatt/weather_repo.dart';
 
 
 import 'json/aufgabe3_4/weather_data.dart' as WeatherData3;
+import 'json/aufgabe5/weather_repository.dart' as REPO5;
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/*
+
 
 class Aufgabe1 extends StatelessWidget {
 
@@ -328,7 +330,7 @@ class Aufgabe5 extends StatefulWidget {
 class _Aufgabe5 extends State<Aufgabe5> {
 
 
-  final WeatherRepository weatherRepository = WeatherRepository();
+  final REPO5.WeatherRepository weatherRepository = REPO5.WeatherRepository();
 
 
   void update() async {
@@ -412,7 +414,7 @@ class _Aufgabe5 extends State<Aufgabe5> {
 
     );
   }
-}*/
+}
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
