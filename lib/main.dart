@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  MyWidget(),
+      home:  FutureBuilderExample(),
     );
   }
 }
@@ -416,14 +416,14 @@ class _Aufgabe5 extends State<Aufgabe5> {
   }
 }
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class FutureBuilderExample extends StatefulWidget {
+  const FutureBuilderExample({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<FutureBuilderExample> createState() => _FutureBuilderExampleState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _FutureBuilderExampleState extends State<FutureBuilderExample> {
 
 
   WeatherRepository repository = WeatherRepository();
